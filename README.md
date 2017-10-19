@@ -1,147 +1,186 @@
 # React-Semantic.UI-Starter
 
-## Out-of-box:
+[![Greenkeeper badge](https://badges.greenkeeper.io/Metnew/react-semantic.ui-starter.svg)](https://greenkeeper.io/)
 
 ![](https://github.com/Metnew/react-semantic.ui-starter/blob/for-gh/screen.gif)
 
-## DEMO: [You can find it here](https://metnew.github.io/react-semantic.ui-starter/)
+### Demo: ~~[reatty.now.sh](https://reatty.now.sh/auth)~~ Temporarily unavailable:(
+<div>
+<a href="https://app.codesponsor.io/link/cFthevq5iGu9WkCHS316WqmS/Metnew/react-semantic.ui-starter" rel="nofollow"><img src="https://app.codesponsor.io/embed/cFthevq5iGu9WkCHS316WqmS/Metnew/react-semantic.ui-starter.svg" style="width: 888px; height: 68px;" alt="Sponsor" /></a>
 
-[![Build Status](https://travis-ci.org/Metnew/react-semantic.ui-starter.svg?branch=master)](https://travis-ci.org/Metnew/react-semantic.ui-starter) 
-[![codecov](https://codecov.io/gh/Metnew/react-semantic.ui-starter/branch/master/graph/badge.svg)](https://codecov.io/gh/Metnew/react-semantic.ui-starter)
-[![David](https://img.shields.io/david/metnew/react-semantic.ui-starter.svg)]() 
-[![David](https://img.shields.io/david/dev/metnew/react-semantic.ui-starter.svg)]() 
-[![Known Vulnerabilities](https://snyk.io/test/github/metnew/react-semantic.ui-starter/badge.svg)](https://snyk.io/test/github/metnew/react-semantic.ui-starter) 
+[![Build Status](https://travis-ci.org/Metnew/react-semantic.ui-starter.svg?branch=master)](https://travis-ci.org/Metnew/react-semantic.ui-starter)
+[![Join the chat at https://gitter.im/react-semantic-ui-starter/Lobby](https://badges.gitter.im/react-semantic-ui-starter/Lobby.svg)](https://gitter.im/react-semantic-ui-starter/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![bitHound Code](https://www.bithound.io/github/Metnew/react-semantic.ui-starter/badges/code.svg)](https://www.bithound.io/github/Metnew/react-semantic.ui-starter)
+[![bitHound Overall Score](https://www.bithound.io/github/Metnew/react-semantic.ui-starter/badges/score.svg)](https://www.bithound.io/github/Metnew/react-semantic.ui-starter)
+<!-- [![codecov](https://codecov.io/gh/Metnew/react-semantic.ui-starter/branch/master/graph/badge.svg)](https://codecov.io/gh/Metnew/react-semantic.ui-starter) -->
 
-### What is it?
-Production-ready, performance-first, optimized, robust, fully-featured boilerplate/example for your **new Progressive Web App**.
+</div>
 
-#### Lighthouse result - [you can find it here](https://googlechrome.github.io/lighthouse/viewer/?gist=cd19fc335d4dc2abfbba10ee550bd0c8)
-SPOILER: 97/100. It might be better/worse in your browser.
+### What is this?
+**Fullstack** **isomorphic** boilerplate with **server-side rendering** and **lazy-loading** for your **new Progressive Web App**.
 
-#### DOMContentLoaded, and etc:
-When app is cached with Service Workers:
-<img src="https://github.com/Metnew/react-semantic.ui-starter/blob/for-gh/after-cached.png" />
+### Quick intro
 
-#### Includes:
+##### [Why this starter uses `react-semantic-ui`?](/docs/SUI.md)
+TL;DR: You're always free to use your own UI framework. The starter is "UI-framework-agnostic".    
+**[UI framework comparison here.](https://hackernoon.com/the-coolest-react-ui-frameworks-for-your-new-react-app-ad699fffd651)**
 
+### What's inside?
+
+[![bitHound Dependencies](https://www.bithound.io/github/Metnew/react-semantic.ui-starter/badges/dependencies.svg)](https://www.bithound.io/github/Metnew/react-semantic.ui-starter/master/dependencies/npm)
+[![bitHound Dev Dependencies](https://www.bithound.io/github/Metnew/react-semantic.ui-starter/badges/devDependencies.svg)](https://www.bithound.io/github/Metnew/react-semantic.ui-starter/master/dependencies/npm)
+
+#### Frontend:
 - **[React](https://facebook.github.io/react/)** and **[Redux](http://redux.js.org/)**
-- **[React-Router v4(!)](https://github.com/ReactTraining/react-router)** + **[React-Router-Redux v5(!)](https://github.com/reactjs/react-router-redux)**
-- **[JSON-server](https://github.com/typicode/json-server)** - mock db.
-- **[Redux-thunk](https://github.com/gaearon/redux-thunk)** and **[Redux-Devtools-Extension](https://github.com/zalmoxisus/redux-devtools-extension)**
-- **[Fetch polyfill](https://github.com/github/fetch)**
+- **SASS**, **[PostCSS](https://github.com/postcss/postcss)**,  and **[styled-components](https://github.com/styled-components/styled-components)** support.
+- **[React-Router v4](https://github.com/ReactTraining/react-router)** + **[React-Router-Redux v5](https://github.com/reactjs/react-router-redux)**
+- **[Redux-thunk](https://github.com/gaearon/redux-thunk)**,  **[Redux-Devtools-Extension](https://github.com/zalmoxisus/redux-devtools-extension)**
+- **[Fetch polyfill](https://github.com/matthew-andrews/isomorphic-fetch)**, **[Promise polyfill](https://github.com/stefanpenner/es6-promise)** and **[normalizr](https://github.com/paularmstrong/normalizr)** (api response normalization)
 - **[Semantic-ui-react](http://react.semantic-ui.com/)** - UI components.
-- **[Store2](https://github.com/nbubna/store)** - LocalStorage access.
-- **[Webpack 2](https://webpack.js.org)**:
-    - babel (stage-0),
-    - **HMR**, devServer, hotMiddleware,
-    - better code optimization with **[Babel React Optimize](https://github.com/thejameskyle/babel-react-optimize)**,
-    - Remove unused css with **[purifycss-webpack](https://github.com/webpack-contrib/purifycss-webpack)**
-- **[Jest](https://facebook.github.io/jest/)** and **[Enzyme](https://github.com/airbnb/enzyme)** - awesome libraries for testing.
+- **[Store2](https://github.com/nbubna/store)** and **[js-cookie](https://github.com/js-cookie/js-cookie)** - LocalStorage and cookies.
 - **[why-did-you-update](https://github.com/garbles/why-did-you-update)** and **[React-Addons-Perf](https://facebook.github.io/react/docs/perf.html)** for better performance optimization.
-- **[Lodash](https://lodash.com/)** - is a dependency of Semantic-ui-react, but with tree-shaking you import in bundle only code that you use.
-- **[Offline-plugin](https://github.com/NekR/offline-plugin)**, **[webpack-manifest-plugin](https://github.com/danethurber/webpack-manifest-plugin)** and **[preload-webpack-plugin](https://github.com/GoogleChrome/preload-webpack-plugin)** for your next progressive app.
-- [And more tools for building and testing...](https://github.com/Metnew/react-semantic.ui-starter/blob/dev/package.json)
+- **[Lodash](https://lodash.com/)** - is a dependency of Semantic-ui-react.
+
+#### Build (Webpack):
+- **[Webpack 3](https://webpack.js.org)**:
+    - Babel (stage-0),
+    - **HMR**, devServer, hotMiddleware,
+    - i18n support with **[i18n-webpack-plugin](https://github.com/webpack-contrib/i18n-webpack-plugin)**
+    - Check your code with **[Eslint](https://github.com/eslint/eslint)** and **[Stylelint](https://github.com/stylelint/stylelint)** (that you can uncomment inside `postcss.config.js`)
+- **[Offline-plugin](https://github.com/NekR/offline-plugin)**, **[favicons-webpack-plugin](https://github.com/jantimon/favicons-webpack-plugin)**,  **[webpack-manifest-plugin](https://github.com/danethurber/webpack-manifest-plugin)**, **[preload-webpack-plugin](https://github.com/GoogleChrome/preload-webpack-plugin)**, **[webpack-bundle-analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer)**, **[compression-webpack-plugin](https://github.com/webpack-contrib/compression-webpack-plugin)**, **[webpack-common-shake](https://github.com/indutny/webpack-common-shake)**.
+
+#### Server:
+- **[rapscallion](https://github.com/FormidableLabs/rapscallion)** - async server-side rendering.
+- **[morgan](https://www.npmjs.com/package/morgan)** - request logger middleware.
+- **[helmet](https://github.com/helmetjs/helmet)** - secure your Express app.
+- **[cookie-parser](https://www.npmjs.com/package/cookie-parser)** - cookie parsing middleware.
+- **[body-parser](https://github.com/expressjs/body-parser)** - body parsing middleware
+- **[compression](https://github.com/expressjs/compression)** -  compression middleware (gzip).
+- **[jsonwebtoken](https://github.com/auth0/node-jsonwebtoken)** - JWT ~~for the win~~ for Auth.
+
+#### Other:
+- **[ESDoc](https://github.com/esdoc/esdoc)** - docs generator.
+- **[Jest](https://facebook.github.io/jest/)** - awesome testing framework.
+- [And more tools for building and testing...](https://github.com/Metnew/react-semantic.ui-starter/blob/master/package.json)
 
 ### Usage
 
 #### Install:
 ```bash
-git clone https://github.com/Metnew/react-semantic.ui-starter.git
-cd react-semantic.ui-starter && rm -rf .git  
+# clone repo without full git history
+git clone --depth=1 https://github.com/Metnew/react-semantic.ui-starter.git
+cd react-semantic.ui-starter
+# You can remove .git folder if you don't want to pull new features or need your own repo
+# to remove folder run: rm -rf .git
+# install dependencies
 npm install
 ```
 
-#### Run:
+#### Development:
 
 ```bash
-npm run dev # run app in dev mode
-npm run db  # run mock db for app(from another process)
+npm run dev # run both frontend and server in dev mode(using `concurrently`)
+
+npm run frontend_dev # run frontend in dev mode.
+
+npm run server_dev  # run server in dev mode
 ```
 
 #### Build:
 
 ```bash
-npm run build # build app
-npm run build:demo # build with process.env.BUILD_DEMO = true
+npm run build # build both frontend and server
+
+npm run frontend_build # build frontend
+
+npm run server_build # build server
 ```
 
-It generates `dist` folder.
+#### Run:
+```bash
+# npm run build - at first build app.
+npm run start # run app. You need already built app for this!
+# then visit localhost:4000 in your browser, if you didn't specify PORT env var
+```
+
+#### Deploy:
+If you use **[now](https://github.com/zeit/now)** on OSS(free) plan - you will run out of memory on `npm run build`. I recommend you to disable some non-critical plugins (ModuleConcatenationPlugin, SriPlugin, FaviconsWebpackPlugin). [Demo that was deployed to "now"](https://reatty.now.sh/)
 
 #### Test:
 
 ```bash
-npm run test # run tests with Jest
+npm run test # run tests with Jest, BASE_API env var is required!
 ```
 
-### FAQ
+#### Lint:
 
-#### Where is manifest.json?
-You can find it in `webpack_config/config.js`
+`eslint-loader` is already included in webpack, but if you want to lint code without webpack:
 
-#### Is SSR available?
-It's under active development inside `/server` folder.
+```bash
+npm run lint:styles  # lint styles with Stylelint
+npm run lint:scripts # lint scripts with ESlint
+```
 
-#### How it differs from other starters?
-Performance-first.    
-**Main purpose - build highly customizable skeleton for PWA, with SSR, following best practices.**
+#### Docs:
 
-#### Is it official starter from semantic-ui-react ?
-No, (currently no, but maybe... :wink:).
+Powered by ESDoc.
 
-#### "You have a components folder and containers folder..and in the container you have another components folder?"
+```bash
+npm run docs # generate docs and `serve`
+```
 
-Components inside `containers/**/components` are components that are required by container.     
+#### ENV vars:
+ENV vars are **very important** for configuration.
 
-For example, `Dashboard`(container) has `DashboardComponent`(component). You can think about `DashboardComponent` as "Isolated component", it isn't used in app anywhere except own parent-container.
+#### Client ENV vars:
+`GA_ID`: Your Google analytics ID.      
+`BASE_API`: `/api/v1` by default. App uses this path for requests with relative urls      
+`SENTRY_PUBLIC_DSN`: Your Sentry public DSN.     
+`APP_LANGUAGE`: `en` by default. Build app with this language. Check `/i18n` folder and **[i18n-webpack-plugin](https://github.com/webpack-contrib/i18n-webpack-plugin)**.      
+`ANALYZE_BUNDLE`: Run webpack-bundle-analyzer after build.     
 
-Components in components are components that:
-1. Don't have own logic and connection with state (as opposite to containers)
-2. Aren't "isolated".(!)
+#### Server ENV vars:
+`PORT`: Port on which your app run.      
+`JWT_SECRET`: JWT_SECRET :smile:     
+`BASE_API`: App uses this path for requests with relative urls.    
+`SENTRY_PUBLIC_DSN`: Your Sentry public DSN.      
+`SENTRY_DSN`: Your Sentry full(private) DSN for server-side error handling.    
+`APP_LANGUAGE`: Language of your app.     
+`DIST_PATH`: (by default: `/dist/client/<APP_LANGUAGE>`). Path where server search for the index.html of your **built** app.    
 
-As your app's components will increase in size, it can be refactored to similar structure that currently implemented in - [semantic-ui-react]( https://github.com/Semantic-Org/Semantic-UI-React/tree/master/src).
 
-#### JSON-server? Why?
-Maybe it will be useful for some purposes in your project.
+#### How it works?
 
-#### Where are tests?
-There are tests for actions and for reducers.    
-Each reducer/action has own folder, where you can find:
-1. Reducer/action itself.
-2. Tests for it.
+##### **[Most commonly asked questions are here.](/docs/FAQ.md)**
 
-#### How to write tests?
-You can find [action testing example here.](https://github.com/Metnew/react-semantic.ui-starter/blob/dev/common/actions/auth/index.test.js)         
-It uses [redux-mock-store.](https://github.com/Metnew/react-semantic.ui-starter/blob/dev/common/actions/auth/index.test.js)
+Some guides are already finished, some aren't. I update branch very often, so improved docs and explanations will be very soon.
 
-#### How Auth works?
-Migration from React-Router v3 to v4 may cause some problems.     
-There is no `onEnter` props in `Route` component.    
+##### ~~[Webpack configuration (not finished)](/docs/webpack.md)~~
+##### [What's the magic behind `npm run dev`?](/docs/scripts.md)
+##### [How i18n works?](/docs/i18n.md)
+##### [Testing.](/docs/testing.md)
+##### [Why this starter uses `react-semantic-ui`?](/docs/SUI.md)
+##### ~~[How does SSR work? (not finished)](/docs/ssr.md)~~
+##### ~~[Environment variables and configuration. (not finished)](/docs/env_vars.md)~~
+##### ~~[Starter architecture and design. (not finished)](/docs/design.md)~~
 
-So, we can solve it that way:
-1. Implement [global routing object.](https://github.com/Metnew/react-semantic.ui-starter/blob/dev/common/routing/index.jsx#L9)
-2. Implement [RouteAuth](https://github.com/Metnew/react-semantic.ui-starter/blob/dev/common/components/RouteAuth/index.jsx) component that protects child component from unauthorized users.
-3. Pass function that checks is user allowed to visit route as prop [in every `RouteAuth` component.](https://github.com/Metnew/react-semantic.ui-starter/blob/dev/common/routing/index.jsx#L52)
-4. When RouteAuth renders [it calls that function.](https://github.com/Metnew/react-semantic.ui-starter/blob/dev/common/routing/index.jsx#L52)
-5. As [`authCheck` function can call redux store](https://github.com/Metnew/react-semantic.ui-starter/blob/dev/common/components/Root/index.jsx#L19-L30), we can access redux's state before `Route` is rendered.
-6. Profit!!!!!
-7. We have access to redux state in function that allows `Route` to be rendered.
-8. Also, there is an additional handler for [auth logic in App container.](https://github.com/Metnew/react-semantic.ui-starter/blob/dev/common/containers/App/index.jsx#L178-L184)
 
-#### How built app looks?
-**[Like this.](https://github.com/Metnew/react-semantic.ui-starter/tree/gh-pages)**
+#### Nearest future:
+- SSR with HMR on client and server from one process. *(next.js-like HMR)*
+- Better docs
+- Semver
+- CLI app
 
-### Also:
 
-[Unstable branch with **latest features.**](https://github.com/Metnew/react-semantic.ui-starter/tree/dev)
+### Something very important:
 
-> Have a question? Ask it. :wink:
+> Have a question? Ask! :wink:
 
-PRs, and issues are welcome :smiling_imp:
+Any help is highly appreciated because the project still has only one maintainer (ha-ha, yeah it's me :smiling_imp:).
+PRs and issues are always welcome.
 
 ### Author
-
 Vladimir Metnew <vladimirmetnew@gmail.com>
 
 ### LICENSE
-
 MIT
